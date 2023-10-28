@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navList{
+    margin-left: 15px;
+    margin-right: 15px;
+    list-style: none;
+    font-size:2.0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+nav{
+    width: 100%;
+    padding-right: 2rem;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    overflow:hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFDEE9;
+background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+position: relative;
+}
+@media(min-width:760px){
+    .container{
+        flex-direction: column;
+    }
+}
+
+.navcontainer{
+    width: 100%;
+    
+    background-color: #9dcae7;
+    background-image: linear-gradient(135deg, #9dcae7 0%, #171a52 100%);
+    
+    
+    min-height:60px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:relative;
+
+}
+
+.navcontainer #navpos{
+    position: sticky;
+    top: 0%;
+}
+
+#navpara{
+    font-size:2.1rem;
+    color: snow;
+    
+}
+a{
+    text-decoration: none;
+    color: azure;
+}
+#navitems{
+    display:flex;
+    gap: 20px;
+  
+}
+@media(min-width:650){
+    #navitems{
+        flex-direction: column;
+    }
+}
+footer{
+    width: 100%;
+}
+.footerbox{
+    background-color: #9dcae7;
+    background-image: linear-gradient(135deg, #9dcae7 0%, #171a52 100%);
+    
+width: 100%;
+text-align:center;
+min-height: 40px;
+
+
+}
+.footerbox p{
+    color:azure;
+    font-size: 1.5rem;
+}
+.contentbox{
+    width: 50%;
+    margin:auto;
+    padding: 3rem;
+    /* border: 1px solid black; */
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    box-shadow: 0px 0px 25px black;
+
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rightbox{
+    position: relative;
+    overflow: hidden;
+    transform: all 0.3s linear 0s;
+    
+}
+.rightbox img{
+    height:280px; 
+    border-radius: 20px;
+    transition:all 0.4s linear 0s;
+    
+}
+.rightbox:hover{
+    transform: scale(1.1);
+}
+.leftbox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.leftbox h2{
+    font-size: 2rem;
+}
+.Variantsbox1{
+    font-size: 1.3rem;
+}
+.Variantsbox2{
+    font-size: 1.3rem;
+}
+.pricebox{
+    font-size: 1.3rem;
+}
+.rightbox .overlay1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:rgba(36,34,34,0.713);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition:all 0.4s linear 0s;
+
+}
+.rightbox:hover .overlay1{
+    opacity: 1;
+   
+}
+.rightbox .overlay1 span{
+    color: azure;
+    font-size: 1.2rem;
+}
+
+.rightbox .overlay2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:rgba(36,34,34,0.713);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition:all 0.4s linear 0s;
+
+}
+.rightbox:hover .overlay2{
+    opacity: 1;
+   
+}
+.rightbox .overlay2 span{
+    color: azure;
+    font-size: 1.2rem;
+}
+#heading{
+    font-size: 50px;
+    font-weight: 900; 
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVnwjPM1WKErYliAg5LCsbOz_1yOVLuRE_EuxFjfixyw&s) ;
+    Background-size :- Cover ;
+    Background-position:- Center ;
+    Background-clip :- text;
+    -webkit-background-clip: text;
+    Color: transparent ;
+}
+#mercedes{
+    font-size: 50px;
+    font-weight: 900; 
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVnwjPM1WKErYliAg5LCsbOz_1yOVLuRE_EuxFjfixyw&s) ;
+    Background-size :- Cover ;
+    Background-position:- Center ;
+    Background-clip :- text;
+    -webkit-background-clip: text;
+    Color: transparent ;
+}
+#bmw{
+    font-size: 50px;
+    font-weight: 900; 
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVnwjPM1WKErYliAg5LCsbOz_1yOVLuRE_EuxFjfixyw&s) ;
+    Background-size :- Cover ;
+    Background-position:- Center ;
+    Background-clip :- text;
+    -webkit-background-clip: text;
+    Color: transparent ;
+}
+#audi{
+    font-size: 50px;
+    font-weight: 900; 
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVnwjPM1WKErYliAg5LCsbOz_1yOVLuRE_EuxFjfixyw&s) ;
+    Background-size :- Cover ;
+    Background-position:- Center ;
+    Background-clip :- text;
+    -webkit-background-clip: text;
+    Color: transparent ;
+}
